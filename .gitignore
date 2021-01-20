@@ -1,0 +1,18 @@
+# Ignore all object files:
+
+*.o
+
+# Ignore all backuo files:
+
+*~
+
+# Ignore all text documents
+
+*.txt
+*.doc
+*.docx
+*.pdf
+
+# Ignore all executables:
+/Exercise1/HelloWorld
+/Exercise2/e\Exercise2
