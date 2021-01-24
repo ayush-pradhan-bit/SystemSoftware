@@ -1,6 +1,6 @@
 // Title - Entering Integer Values
 // Author - Ayush Pradhan
-// Descript - two integers provided by the user, and compared  
+// Descript - user enters two integers and multiple task are done
 
 #include <stdio.h>
 
