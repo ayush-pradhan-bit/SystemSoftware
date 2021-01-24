@@ -1,6 +1,6 @@
 // Title - Entering Integer Values
 // Author - Ayush Pradhan
-// Descript - user enters two integers which are printed
+// Descript - user enters two integers and multiple task are done
 
 #include <stdio.h>
 
@@ -23,5 +23,3 @@ int main() {
     
     return 0;
 }
-
-
