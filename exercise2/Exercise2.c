@@ -6,11 +6,11 @@
 
 int main() {    
 //These next lines of code first prompt the user to give two integer and then prints it out
-  int number1, number2; //thisisvariable
+  int num1, num2; //thisisvariable
     
     printf("Enter first integer: \n"); 
-    scanf("%d", &number1); //reads first variable from user
+    scanf("%d", &num1); //reads first variable from user
     printf("Enter second integer: \n" ); 
-    scanf("%d", &number2); //reads second variable from user
+    scanf("%d", &num2); //reads second variable from user
     return 0;
 }
