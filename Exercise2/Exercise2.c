@@ -6,7 +6,9 @@
 
 int main() {
 //These next lines of code first prompt the user to give two integer and then prints it out
-  int num1, num2; //thisisvariable
+  int num1, num2, diff, sum; //thisisvariable
+  double div, avg;//Variables
+  long power =1 ;//Variable
 
     printf("Enter first integer: \n"); 
     scanf("%d", &num1); //reads first variable from user
@@ -23,5 +25,19 @@ int main() {
   else {
   	printf("Second integer is greater");//Prints if second input is greater
   }
-    return 0;
+     sum = num1 + num2; //We find the sum of the integers
+     diff = num1 - num2; // We display the difference of the integers
+     div = (float)num1/num2; //We find the division of the integers
+     avg = (float)(num1+num2)/2; //We find the average
+     printf("The sum is %d \n", sum); //Print out the output
+     printf("The diff is %d \n", diff); // print the difference
+     printf("The division is %.2f \n", div);//Prints the division
+     printf("The average is %.2f \n", avg);//Prints the average
+  while (num2 != 0) { //To see that the entered input is not 0
+  	power *= num1; // FIrst number is base
+  	--num2; //Second number is Integer
+  }
+  printf("The power value of the two integers is %ld \n", power);  //Prints the power
+  
+  return 0;
 }
