@@ -4,6 +4,8 @@
 //          - Random number is generated and then checked if it is odd or even or 0
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
+#include <time.h>
 
 int main() {
 //These next lines of code first prompt the user to give two integer and then prints it out
@@ -17,14 +19,14 @@ int main() {
      scanf("%d", &num2); //reads second variable from user
     
   if (num1 == num2){
-  	printf("both are equal"); //Prints if both integer are same
+  	printf("\nboth are equal"); //Prints if both integer are same
   	}
   else
   if (num1 > num2){
-  	printf("First integer is greater");// Prints if first input integer is greater
+  	printf("First integer is greater: \n");// Prints if first input integer is greater
   	}
   else {
-  	printf("Second integer is greater");//Prints if second input is greater
+  	printf("Second integer is greater: \n");//Prints if second input is greater
   }
      sum = num1 + num2; //We find the sum of the integers
      diff = num1 - num2; // We display the difference of the integers
@@ -40,28 +42,45 @@ int main() {
   }
   printf("The power value of the two integers is %ld \n", power);  //Prints the power
   // Exercise 2 part 3 done
-  
+    srand(time(NULL)); //random seed fucntion
     c= rand() %100; //function to input random number
     
-    printf("The Random number is %d", c); // Random number is printed
+    printf("The Random number is %d \n", c); // Random number is printed
     
   if (c%2==0){ //CHecks if the number is even
-  	printf("The random number is even ", c); //prints if it is even
+  	printf("The random number is even: \n ", c); //prints if it is even
   	}
   else
   if (c%2!=0){//checks if the number is odd
-  	printf("\nThe random number generated is odd ", c);//prints if it is odd
+  	printf("\nThe random number generated is odd: \n ", c);//prints if it is odd
   	}
   else{
   	printf("it is zero!!");//prints if it neither even or odd
   	}
   
   if (c%3 ==0 && c%8 ==8){ // function to check if random number is divisible by 3 and 8
-  	printf("\nThe random number is divisible by 3 and 8");//prints the output
+  	printf("\nThe random number is divisible by 3 and 8: \n");//prints the output
   	}
   else
-  	printf("\nThe random number is not divisible by 3 and 8");//prints the output
+  	printf("\nThe random number is not divisible by 3 and 8: \n");//prints the output
   // Exercise2 part 4 done
+  
+  int array[10] = {1,3,4,5,7,8,34,45,56,99}; //array of 10 random integers
+  int i = 0;
+  int check = 0;
+  	printf("The array for 10 integers is : \n");
   	
-  return 0;
-}
+  	for (check = 0; check < 10; check ++){
+  		printf("%d\t",array[check]);
+  		if (array[check] == c){//TO check if random number is present in array
+  			printf("the random number is present in the array: %d ! \n", array[check],c);
+  		}
+  		}
+  		printf("\nthe reverse array is: \n"); 
+  		for (i=9; i>=0;i--){ //formula to show reversed array
+  			printf("%d\t", array[i]);
+  		}
+  		printf("Program complete");
+  		return 0;
+ }//Exercise2 part 5 done
+ 
