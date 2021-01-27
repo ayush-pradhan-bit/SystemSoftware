@@ -7,7 +7,7 @@
 
 int main() {
 //These next lines of code first prompt the user to give two integer and then prints it out
-  int num1, num2, diff, sum, a, c; //thisisvariable
+  int num1, num2, diff, sum, c; //thisisvariable
   double div, avg;//Variables
   long power =1 ;//Variable
 
@@ -39,10 +39,21 @@ int main() {
   	--num2; //Second number is Integer
   }
   printf("The power value of the two integers is %ld \n", power);  //Prints the power
+  // part 3 done
   
-    c= rand(); //function to input random number
-    a = c%100;
-    printf("The Random number is %d", a+1); // Random number is printed
-  
+    c= rand() %100; //function to input random number
+    
+    printf("The Random number is %d", c); // Random number is printed
+    
+  if (c%2==0){ //CHecks if the number is even
+  	printf("The random number is even ", c); //prints if it is even
+  	}
+  else
+  if (c%2!=0){//checks if the number is odd
+  	printf("\nThe random number generated is odd ", c);//prints if it is odd
+  	}
+  else{
+  	printf("it is zero!!");//prints if it neither even or odd
+  	}
   return 0;
 }
