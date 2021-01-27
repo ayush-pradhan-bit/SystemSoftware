@@ -9,11 +9,10 @@
 
 int main() {
 //These next lines of code first prompt the user to give two integer and then prints it out
-  int num1, num2, diff, sum, c; //variable
+  int num1, num2, diff, sum, c, i = 0, check = 0; //variable
   double div, avg;//Variables
   long power =1 ;//Variable
-  int i = 0;
-  int check = 0;
+  
 
      printf("Enter first integer: \n"); 
      scanf("%d", &num1); //reads first variable from user
