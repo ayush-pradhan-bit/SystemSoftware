@@ -1,19 +1,20 @@
 // Title - Entering Integer Values
 // Author - Ayush Pradhan
 // Descript - user enters two integers and multiple task are done
-
+//          - Random number is generated and then checked if it is odd or even or 0
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
 //These next lines of code first prompt the user to give two integer and then prints it out
-  int num1, num2, diff, sum; //thisisvariable
+  int num1, num2, diff, sum, a, c; //thisisvariable
   double div, avg;//Variables
   long power =1 ;//Variable
 
-    printf("Enter first integer: \n"); 
-    scanf("%d", &num1); //reads first variable from user
-    printf("Enter second integer: \n" ); 
-    scanf("%d", &num2); //reads second variable from user
+     printf("Enter first integer: \n"); 
+     scanf("%d", &num1); //reads first variable from user
+     printf("Enter second integer: \n" ); 
+     scanf("%d", &num2); //reads second variable from user
     
   if (num1 == num2){
   	printf("both are equal"); //Prints if both integer are same
@@ -38,6 +39,10 @@ int main() {
   	--num2; //Second number is Integer
   }
   printf("The power value of the two integers is %ld \n", power);  //Prints the power
+  
+    c= rand(); //function to input random number
+    a = c%100;
+    printf("The Random number is %d", a+1); // Random number is printed
   
   return 0;
 }
