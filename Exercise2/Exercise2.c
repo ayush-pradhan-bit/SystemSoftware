@@ -80,7 +80,7 @@ int main() {
   		for (i=9; i>=0;i--){ //formula to show reversed array
   			printf("%d\t", array[i]);
   		}
-  		printf("Program complete");
+  		printf("Program complete");//Prints output
   		return 0;
  }//Exercise2 part 5 done
  
