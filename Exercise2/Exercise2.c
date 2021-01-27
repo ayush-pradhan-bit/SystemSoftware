@@ -12,6 +12,8 @@ int main() {
   int num1, num2, diff, sum, c; //variable
   double div, avg;//Variables
   long power =1 ;//Variable
+  int i = 0;
+  int check = 0;
 
      printf("Enter first integer: \n"); 
      scanf("%d", &num1); //reads first variable from user
@@ -66,8 +68,7 @@ int main() {
   // Exercise2 part 4 done
   
   int array[10] = {1,3,4,5,7,8,34,45,56,99}; //array of 10 random integers
-  int i = 0;
-  int check = 0;
+  
   	printf("The array for 10 integers is : \n");
   	
   	for (check = 0; check < 10; check ++){
