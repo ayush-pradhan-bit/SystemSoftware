@@ -7,7 +7,7 @@
 
 int main() {
 //These next lines of code first prompt the user to give two integer and then prints it out
-  int num1, num2, diff, sum, c; //thisisvariable
+  int num1, num2, diff, sum, c; //variable
   double div, avg;//Variables
   long power =1 ;//Variable
 
@@ -39,7 +39,7 @@ int main() {
   	--num2; //Second number is Integer
   }
   printf("The power value of the two integers is %ld \n", power);  //Prints the power
-  // part 3 done
+  // Exercise 2 part 3 done
   
     c= rand() %100; //function to input random number
     
@@ -55,5 +55,13 @@ int main() {
   else{
   	printf("it is zero!!");//prints if it neither even or odd
   	}
+  
+  if (c%3 ==0 && c%8 ==8){ // function to check if random number is divisible by 3 and 8
+  	printf("\nThe random number is divisible by 3 and 8");//prints the output
+  	}
+  else
+  	printf("\nThe random number is not divisible by 3 and 8");//prints the output
+  // Exercise2 part 4 done
+  	
   return 0;
 }
