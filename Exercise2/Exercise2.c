@@ -1,4 +1,4 @@
-// Title - Entering Integer Values
+// Title - Entering Integer Values given by user
 // Author - Ayush Pradhan
 // Descript - user enters two integers and multiple task are done
 //          - Random number is generated and then checked if it is odd or even or 0
