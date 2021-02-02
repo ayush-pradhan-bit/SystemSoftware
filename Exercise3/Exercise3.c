@@ -46,5 +46,38 @@
     	printf("The result is: %d \n", MultiItself);
     	
     //Exercise3 part 3 done
+     
+     int data, numb1 = 0, numb2 = 1, temp, flag = 0;
+        srand(time(0));
+        printf("The random number: \n");
+        data = rand()%100000;
+
+        /* get the input from the user */
+        printf("%d\n", data);
+        
+
+        /* 0 and 1 are fibonacci numbers */
+        if (data == numb1 || data == numb2) {
+        	printf("%d is a fibonacci number\n", data);
+        	return 0;
+        }
+
+        /* checking whether a given number is fobonacci no or not */
+        while (numb2 <= data) {
+        	temp = numb2;
+        	numb2 = numb1 + numb2;
+        	numb1 = temp;
+            if (numb2 == data) {
+            	flag = 1;
+                break;
+                }
+        }
+
+        /* print the results */
+        if (flag) {
+        	printf("%d is a fibonacci number\n", data);
+       }else {
+        	printf("%d is not a fibonacci number\n", data);
+        } //Exercise3 part4 done
     return 0;
 }
