@@ -38,22 +38,22 @@
     
     srand(time(NULL));//random seed
     	RandomNumber = (rand() % (UpperLimit - LowerLimit + 1)) + LowerLimit;
-    	printf("Random Number Generated from 2 to 20 : \n", RandomNumber);
+    	printf("Random Number Generated from 2 to 20 :  \n", RandomNumber);
     	for (MultiItself = RandomNumber; MultiItself <= 65535; MultiItself *= RandomNumber){ //for loopto find multi of itself
     		printf ("%d \n", MultiItself);
     		
     	}
-    	printf("The result is: %d \n", MultiItself);
+    	printf("The result is: %d \n ", MultiItself);
     	
     //Exercise3 part 3 done
      
      int data, numb1 = 0, numb2 = 1, temp, flag = 0;//integer variables
         srand(time(0));//random seed
-        printf("The random number: \n");//printing random number
+        printf("\nThe random number: \n");//printing random number
         data = rand()%100000;
 
         // get the input from the user */
-        printf("%d\n", data);
+        printf("%d \n", data);
         
 
         // 0 and 1 are fibonacci numbers */
@@ -105,7 +105,7 @@
     srand(time(NULL));//random seed
     collatzrand = rand() % 100;
     
-    printf("the collatz sequence for random number is %d: ", collatzrand); //printing random number
+    printf("the collatz sequence for random number of %d: ", collatzrand); //printing random number
     if(collatzrand == 0 || collatzrand == 1){
         printf("The number is 0 or 1 \n");
     }
