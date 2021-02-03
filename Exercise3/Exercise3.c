@@ -12,7 +12,7 @@
     int num1 = 0, sum =0, num2 = 0, sum1 = 0;
     int firstnum = 0;
     int secondnum = 0;
-    int RandomNumber = 0;//provide random number from 1 to 100
+    int RandomNumber = 0;//random number from 1 to 100
     int UpperLimit = 20;//upper limit is 20
     int LowerLimit = 2;//lower limit is 2
     int MultiItself = 0;// variable to multi number with itself
