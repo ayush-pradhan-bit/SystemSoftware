@@ -2,7 +2,7 @@
 //Author - Ayush Pradhan
 //Description - find sum of numbers using loop, sum of even numbers and generating random numbers to multiply with itself
 //            - display random number and see if it a fibonacci number or not
-//            - display a random number and print its collatz sequence and lenght 
+//            - display a random number and print its collatz sequence and lenght of the sequence
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
