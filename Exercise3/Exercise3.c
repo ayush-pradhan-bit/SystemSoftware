@@ -90,10 +90,10 @@
     	while (n != 1){ //While loop
         	printf("%d - ", n);
         	if(n % 2 == 0){ //if loop when n is even
-            n = n/2;
+            		n = n/2;
         }
         	else{
-            n = (3*n) + 1;//n is odd
+            		n = (3*n) + 1;//n is odd
             
         	}
         	count++;
