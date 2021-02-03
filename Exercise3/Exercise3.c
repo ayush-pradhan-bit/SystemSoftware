@@ -47,7 +47,7 @@
     	
     //Exercise3 part 3 done
      
-     int data, numb1 = 0, numb2 = 1, temp, flag = 0;//integer variables
+    int data, numb1 = 0, numb2 = 1, temp, flag = 0;//integer variables
         srand(time(0));//random seed
         printf("\nThe random number: \n");//printing random number
         data = rand()%100000;
