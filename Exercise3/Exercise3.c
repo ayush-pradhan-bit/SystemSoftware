@@ -1,8 +1,8 @@
 //Title - play with numbers
 //Author - Ayush Pradhan
 //Description - find sum of numbers using loop, sum of even numbers and generating random numbers to multiply with itself
-//            -
-//            
+//            - display random number and see if it a fibonacci number or not
+//            - display a random number and print its collatz sequence and lenght 
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -39,7 +39,7 @@
     srand(time(NULL));//random seed
     	RandomNumber = (rand() % (UpperLimit - LowerLimit + 1)) + LowerLimit;
     	printf("Random Number Generated from 2 to 20 : \n", RandomNumber);
-    	for (MultiItself = RandomNumber; MultiItself <= 65535; MultiItself *= RandomNumber){//for loopto find multi of itself
+    	for (MultiItself = RandomNumber; MultiItself <= 65535; MultiItself *= RandomNumber){ //for loopto find multi of itself
     		printf ("%d \n", MultiItself);
     		
     	}
@@ -47,22 +47,22 @@
     	
     //Exercise3 part 3 done
      
-     int data, numb1 = 0, numb2 = 1, temp, flag = 0;
-        srand(time(0));
-        printf("The random number: \n");
+     int data, numb1 = 0, numb2 = 1, temp, flag = 0;//integer variables
+        srand(time(0));//random seed
+        printf("The random number: \n");//printing random number
         data = rand()%100000;
 
-        /* get the input from the user */
+        // get the input from the user */
         printf("%d\n", data);
         
 
-        /* 0 and 1 are fibonacci numbers */
+        // 0 and 1 are fibonacci numbers */
         if (data == numb1 || data == numb2) {
         	printf("%d is a fibonacci number\n", data);
         	return 0;
         }
 
-        /* checking whether a given number is fobonacci no or not */
+        // checking whether a given number is fobonacci no or not */
         while (numb2 <= data) {
         	temp = numb2;
         	numb2 = numb1 + numb2;
@@ -73,11 +73,45 @@
                 }
         }
 
-        /* print the results */
+        // print the results */
         if (flag) {
         	printf("%d is a fibonacci number\n", data);
        }else {
         	printf("%d is not a fibonacci number\n", data);
         } //Exercise3 part4 done
+        
+      //Exercise3 part5
+
+
+    int collatzrand = 0; //Variable to store random number
+    int printCollatz(int n){ //int function for collatz
+    	int count = 0;
+    
+    	while (n != 1){ //While loop
+        	printf("%d - ", n);
+        	if(n % 2 == 0){ //if loop when n is even
+            n = n/2;
+        }
+        	else{
+            n = (3*n) + 1;//n is odd
+            
+        	}
+        	count++;
+        }
+    	printf("\nthe length of the collatz sequence is : %d \n", count);    
+}
+
+    unsigned seed = time(0);// initialising random
+    srand(time(NULL));//random seed
+    collatzrand = rand() % 100;
+    
+    printf("the collatz sequence for random number is %d: ", collatzrand); //printing random number
+    if(collatzrand == 0 || collatzrand == 1){
+        printf("The number is 0 or 1 \n");
+    }
+    else{
+        printCollatz(collatzrand); //function called for collatz calculation
+    }
+   //Exercise3 part 5 done
     return 0;
 }
